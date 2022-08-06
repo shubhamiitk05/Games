@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript on Heaven</title>
+   
+</head>
+<body>
+    <div class="container-1">
+        <h2 class="text-center">Challenge 1: Your Age in Days</h2>
+        <div class="flex-box-container-1"> 
+            <div>
+            <button class="btn btn-primary" onclick="ageindays()">Click me</button>
+            </div>
+    
+            <div>
+            <button class="btn btn-danger" onclick="reset()">reset</button>
+            </div>
+        </div> 
+        <div class="flex-box-container-1">
+            <div id="flex-box-result">
+
+            </div>
+        </div>   
+    </div>
+    <div class="container-2">
+        <h2>Cat Generator</h2>
+        <button class="btn btn-success" id="cat-genertor" onclick="generatecat()">Generate Cat</button>
+        <div class="flex-box-container-2" id="flex-cat-gen">
+          
+            
+        </div>
+    </div>
+    <div class="container-3">
+        <h2>Challenge 3:Rock,Paper and Scissors</h2>
+        <div class="flex-box-container-3" id="flex-box-container-3-game">
+            <img id="rock" src="960x0.jpg" height="150px" width="150px" onclick="rpsthis(this)">
+            <img id="paper" src="notebook-paper.jpg" height="150px" width="150px"onclick="rpsthis(this)">
+            <img id="scissors" src="scissor.jpg" height="150px" width="150px"onclick="rpsthis(this)">
+
+        </div>
+    </div>
+    <div class="container-4">
+        <h2>Challenge 4:Change the Color of All Buttons!!</h2>
+        <div class="flex-box-container-4" id="changecolour">
+            <form> 
+                <select name="backdrop" id="backdrop" onchange="buttoncolourchange(this)">
+                    <option value="random">Random</option>
+                    <option value="green">Green</option>
+                    <option value="red">Red</option>
+                    <option value="reset">Reset</option>
+        
+
+
+                </select>
+            </form>
+            <button class="btn btn-primary">Instagram</button>
+            <button class="btn btn-success">Google</button>
+            <button class="btn btn-danger">Facebook</button>
+            <button class="btn btn-warning">Gmail</button>
+           
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
